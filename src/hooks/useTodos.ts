@@ -240,7 +240,7 @@ export function useTodos() {
           schema: 'public',
           table: 'todos'
         },
-        (payload) => {
+        () => {
           // 只在必要時重新載入，避免過度更新
           // 如果是由本地操作引起的變化，可以跳過重新載入
           // 但為了保持資料一致性，我們仍然重新載入
