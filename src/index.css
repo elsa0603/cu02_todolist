@@ -31,6 +31,8 @@ body {
   align-items: flex-start;
   justify-content: center;
   padding: 2rem 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: light) {
@@ -42,6 +44,13 @@ body {
 
 @media (max-width: 768px) {
   #root {
-    padding: 1rem 0.5rem;
+    padding: 0.5rem;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 480px) {
+  #root {
+    padding: 0.25rem;
   }
 }
